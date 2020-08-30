@@ -1,25 +1,10 @@
 import React from 'react';
 import './App.css';
-import SubApp from './Button/SubApp'
-import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
-import PaperPractice from './Paper/Paper'
-const theme = createMuiTheme({
-  // overrides: {
-  //   // Style sheet name ⚛️
-  //   MuiButton: {
-  //     // Name of the rule
-  //     text: {
-  //       // Some CSS
-  //       borderRadius: 3,
-  //       border: 0,
-  //       color: 'white',
-  //       height: 48,
-  //       padding: '0 30px',
-  //       boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
-  //     },
-  //   },
-  // },
-});
+import Button1 from './Button/Button1'
+import { ThemeProvider } from '@material-ui/core/styles';
+import Grid1 from '../src/Grid/Grid'
+import theme from './theme';
+
 
 
 //Now i want change its style attribute  and add class....
@@ -27,8 +12,8 @@ function App() {
   return (
     <div className="App">
       <ThemeProvider theme={theme}>
-        <SubApp />
-        <PaperPractice />
+        <Button1 />
+        <Grid1 />
       </ThemeProvider>
     </div>
   );
