@@ -4,7 +4,9 @@ import Header from './Header'
 import Content from './Content'
 
 const Grid1 = () => {
+
     return (
+
         <Grid container direction='column'>
             <Grid item >
                 <Header />
@@ -13,6 +15,8 @@ const Grid1 = () => {
             <Grid item container >
                 <Grid item xs={0} sm={2} />
                 <Grid item xs={12} sm={8} >
+
+                    {/* This way, It is very good for the responsive design... */}
                     <Content />
                 </Grid>
                 <Grid item xs={0} sm={2} />
