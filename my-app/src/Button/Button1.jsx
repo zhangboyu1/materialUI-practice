@@ -11,7 +11,6 @@ function Button1() {
     //也可以人为自己设置style。。。这样的话，会跟好一点。。。。
     //也可以人为自己设置style。。。这样的话，会跟好一点。。。。
 
-
     return (
         <>
             <Typography className={loginTextStyle} variant='h2' >hello there</Typography>
